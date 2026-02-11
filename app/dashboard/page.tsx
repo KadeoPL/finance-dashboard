@@ -1,6 +1,7 @@
 import React from "react";
 import { Sidebar } from "@/components/ui/sidebar";
 import { SidebarTrigger, SidebarProvider } from "@/components/ui/sidebar";
+import TransactionsList from "@/features/transactions/components/TransactionsList";
 
 export default function page() {
   return (
@@ -11,7 +12,9 @@ export default function page() {
           <div>
             <SidebarTrigger />
           </div>
-          <div></div>
+          <div>
+            <TransactionsList />
+          </div>
         </div>
       </div>
     </SidebarProvider>
